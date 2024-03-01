@@ -1,0 +1,333 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: block;
+}
+
+.backdropFormRegister {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 101;
+    display: block;
+}
+
+header {
+    background-color: #fff;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s linear;
+    height: 100px;
+}
+
+.form-register {
+    position: fixed;
+    z-index: 3000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+header .header-button {
+    background-color: #1F409A;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    animation: pulse 0.5s infinite alternate;
+}
+
+header .header-button:hover {
+    cursor: pointer;
+    background-color: #0a41d7;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+header.header-sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    padding: 0 5vw;
+    background-color: #1F409A;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    animation: headerSticky 0.5s linear;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+header.header-sticky .mobile-menu-icon {
+    color: #fff;
+}
+
+header.header-sticky .header-button {
+    background: #37C5F4;
+}
+
+header.header-sticky .header-logo img {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+header.header-sticky nav ul li a {
+    color: #fff;
+}
+
+@keyframes headerSticky {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+header .header-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+header .header-logo img {
+    width: 180px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav div.iconClose {
+    display: none;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav li {
+    margin-right: 1rem;
+}
+
+header nav .header-navlinks a {
+    text-decoration: none;
+    color: #1F409A;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header .focus {
+    color: #37C5F4 !important;
+    position: relative;
+}
+
+.focus,
+.focus::after {
+    transition: all .5s;
+}
+
+.focus::after {
+    position: absolute;
+    top: 140%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    content: '.';
+    color: transparent;
+    background: #37C5F4;
+    height: 1.5px;
+    animation: progressBarAnimation 0.5s ease-out forwards;
+}
+
+@keyframes progressBarAnimation {
+    100% {
+        width: 100%;
+    }
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+
+    header .header-logo img,
+    header.header-sticky img {
+        display: none !important;
+    }
+
+    .mobile-menu-icon {
+        width: 70%;
+    }
+
+    header nav {
+        position: absolute;
+        transform: translateX(-100%);
+        transition: all 0.3s linear;
+        flex-direction: column;
+        width: 75%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 50;
+    }
+
+    header nav.show {
+        transition: all 0.3s linear;
+        transform: translateX(0);
+        background: #ccc;
+        z-index: 100;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    header nav div.iconClose {
+        border-bottom: 1px solid #1F409A;
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header nav div.iconClose svg {
+        font-size: 25px;
+        color: #000;
+        display: block;
+    }
+
+    header nav .header-navlinks {
+        flex-direction: column;
+        padding: 10px 40px;
+    }
+
+    header nav .header-navlinks li {
+        margin: 0.5rem 0;
+        margin-top: 20px;
+    }
+
+    header nav .header-navlinks li a {
+        color: #000;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    header .mobile-menu-icon {
+        display: block;
+    }
+
+    header .mobile-menu-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    header .header-social-icon {
+        padding: 20px 40px;
+        width: 100%;
+    }
+
+    header .header-social-icon h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    header .header-social-icon div {
+        height: 50px;
+    }
+
+    header .header-social-icon div a:nth-child(2),
+    header .header-social-icon div a:nth-child(3) {
+        margin-left: 20px;
+    }
+
+    header .header-social-icon div a img {
+        width: 48px;
+        height: 48px;
+    }
+
+    header .header-logo-mobile {
+        padding: 20px 40px;
+        width: 100%;
+    }
+
+    header .header-logo-mobile img {
+        width: 100%;
+        height: auto;
+    }
+
+    header .header-text {
+        padding: 0 40px;
+        width: 100%;
+    }
+
+    header .header-text p {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        color: #000;
+    }
+
+    header .header-copyright-text {
+        padding: 40px 40px;
+        width: 100%;
+    }
+
+    header .header-copyright-text p {
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header .header-text p {
+        text-align: start;
+    }
+
+    header .header-button {
+        width: 280px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .form-register {
+        overflow: scroll;
+        margin: 0;
+        padding: 30px;
+    }
+}

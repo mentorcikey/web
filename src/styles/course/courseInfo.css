@@ -1,0 +1,236 @@
+.courseInfo-container {
+    padding: 0 5vw;
+    margin-top: 50px;
+    display: flex;
+    gap: 2vw;
+}
+
+.courseInfo-container .courseInfo-content {
+    width: 70%;
+}
+
+.courseInfo-container .courseInfo-content h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1F409A;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.courseInfo-container .courseInfo-content hr {
+    width: 70px;
+    height: 5px;
+    background-color: #1F409A;
+    margin-bottom: 20px;
+}
+
+.courseInfo-container .courseInfo-content>h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1F409A;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.courseInfo-container .courseInfo-content .courseInfo-contact {
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.courseInfo-container .courseInfo-content .courseInfo-contact div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.courseInfo-container .courseInfo-content .courseInfo-contact div ul li:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.courseInfo-container .courseInfo-content .courseInfo-contact div img {
+    width: 70px;
+    height: 70px;
+}
+
+.courseInfo-container .courseInfo-object {
+    margin-top: 50px;
+}
+
+.courseInfo-container .courseInfo-object ul {
+    padding-left: 50px;
+}
+
+.courseInfo-container .courseInfo-object ul li {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 20px;
+}
+
+.courseInfo-container .courseInfo-why-joinCourse {
+    margin-top: 50px;
+}
+
+.courseInfo-container .courseInfo-why-joinCourse ul {
+    padding-left: 50px;
+}
+
+.courseInfo-container .courseInfo-why-joinCourse ul li {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 20px;
+}
+
+.courseInfo-container .courseInfo-advantage {
+    margin-top: 50px;
+}
+
+.courseInfo-container .courseInfo-advantage ul {
+    padding-left: 50px;
+}
+
+.courseInfo-container .courseInfo-advantage ul li {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.courseInfo-container .courseInfo-advantage ul li span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-left: 10px;
+}
+
+.courseInfo-container .courseInfo-courseContent {
+    margin-top: 50px;
+}
+
+.courseInfo-container .courseInfo-courseContent ul {
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: 48% 48%;
+}
+
+.courseInfo-container .courseInfo-courseContent ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.courseInfo-container .courseInfo-courseContent ul li span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-left: 10px;
+}
+
+.courseInfo-container .courseInfo-require {
+    margin-top: 50px;
+}
+
+.courseInfo-container .courseInfo-require ul {
+    padding-left: 50px;
+}
+
+.courseInfo-container .courseInfo-require ul li {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 20px;
+}
+
+.courseInfo-container .courseInfo-teacher {
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.courseInfo-container .courseInfo-card {
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 1px 2px 10px #1F409A;
+    height: 60%;
+}
+
+.courseInfo-container .courseInfo-card img {
+    width: 100%;
+    height: 55%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.courseInfo-container .courseInfo-card .courseInfo-content {
+    background-color: #37C5F4;
+    padding: 20px 40px 40px;
+    width: 100%;
+    height: 45%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.courseInfo-container .courseInfo-card .courseInfo-content .courseInfo-content-item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.courseInfo-container .courseInfo-card .courseInfo-content .courseInfo-content-item svg {
+    font-size: 18px;
+    color: #1F409A;
+}
+
+.courseInfo-container .courseInfo-card .courseInfo-content .courseInfo-content-item div {
+    margin-left: 20px;
+}
+
+.courseInfo-container .courseInfo-card .courseInfo-content .courseInfo-content-item div p {
+    font-size: 18px;
+}
+
+.courseInfo-container .courseInfo-card .courseInfo-content .courseInfo-content-item div p:nth-child(1) {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.courseInfo-container .courseInfo-card .courseInfo-content .courseInfo-content-item div p:nth-child(2) {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .courseInfo-container {
+        flex-direction: column;
+        margin-top: 0;
+        gap: 50px;
+    }
+
+    .courseInfo-container .courseInfo-content,
+    .courseInfo-container .courseInfo-card {
+        width: 100%;
+    }
+
+    .courseInfo-container .courseInfo-content ul {
+        padding-left: 0px;
+    }
+
+    .courseInfo-container .courseInfo-advantage ul li {
+        width: 100%;
+    }
+
+    .courseInfo-container .courseInfo-advantage ul li span {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .courseInfo-container .courseInfo-advantage ul li svg {
+        width: 10%;
+    }
+
+}

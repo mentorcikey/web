@@ -1,0 +1,132 @@
+.contactPage-container {
+    width: 100%;
+    height: 600px;
+    margin: 200px 0 50px 0;
+    background-color: #ccc;
+}
+
+.contactPage-container>h1 {
+    height: 40%;
+    padding: 50px 5vw;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.contactPage-container-info {
+    width: 100%;
+    height: 60%;
+    background-color: #1F409A;
+    padding: 50px 5vw;
+    position: relative;
+}
+
+.contactPage-container-info .contactPage-container-title {
+    width: 40%;
+    color: #fff;
+}
+
+.contactPage-container-info .contactPage-container-title h1 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.contactPage-container-info .contactPage-container-title ul li {
+    list-style: none;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contactPage-container-info form {
+    position: absolute;
+    background-color: #37C5F4;
+    bottom: 100px;
+    right: 10%;
+    padding: 50px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.contactPage-container-info form h1 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.contactPage-container-info form .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contactPage-container-info form .form-group label {
+    font-size: #000;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.contactPage-container-info form .form-group input,
+.contactPage-container-info form .form-group textarea {
+    width: 100%;
+    font-size: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+}
+
+.contactPage-container-info form button {
+    width: 70%;
+    margin: 30px auto 0;
+    background-color: #1F409A;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.contactPage-container-info form button:hover {
+    cursor: pointer;
+    background-color: #4164c4;
+    transform: translateY(-5px);
+    transition: all 0.5s linear;
+}
+
+.contactPage-container-info form p {
+    font-size: 15px;
+    color: red;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .contactPage-container {
+        height: auto;
+        margin: 0;
+    }
+
+    .contactPage-container-info {
+        position: static;
+    }
+
+    .contactPage-container-info .contactPage-container-title {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contactPage-container-info form {
+        position: static;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .contactPage-container-info form button {
+        display: block;
+    }
+}

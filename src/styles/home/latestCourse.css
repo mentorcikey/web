@@ -1,0 +1,109 @@
+.latestCourse-container {
+    padding: 0 5vw;
+    margin-top: 50px;
+}
+
+.latestCourse-container h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1F409A;
+}
+
+.latestCourse-container .slick-track {
+    display: flex;
+    gap: 20px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.latestCourse-container .latestCourse-slider .latestCourse-slide {
+    background-color: #98d7ec;
+    border-radius: 10px;
+    margin-right: 20px;
+    height: 420px;
+}
+
+.latestCourse-container .latestCourse-slider .latestCourse-slide .latestCourse-slide-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.latestCourse-container .latestCourse-slider .latestCourse-slide .latestCourse-slide-img img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+
+.latestCourse-container .latestCourse-slider .latestCourse-slide:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.latestCourse-container .latestCourse-slider .latestCourse-slide h1 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.latestCourse-slide-content {
+    padding: 20px;
+}
+
+.latestCourse-slide-content button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #1F409A;
+    color: #fff;
+}
+
+.latestCourse-slide-content button span {
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.latestCourse-slide-courseInfo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.latestCourse-slide-courseInfo div {
+    display: flex;
+    align-items: center;
+}
+
+.latestCourse-slide-courseInfo div p {
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+    margin-left: 6px;
+}
+
+.latestCourse-container .slick-arrow::after,
+.latestCourse-container .slick-arrow::before {
+    color: #1F409A;
+}
+
+@media screen and (max-width: 768px) {
+
+    .latestCourse-container .slick-arrow::after,
+    .latestCourse-container .slick-arrow::before {
+        display: none;
+    }
+
+    .latestCourse-container .slick-track {
+        gap: 0;
+    }
+}

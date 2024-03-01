@@ -1,0 +1,66 @@
+.trendingTechnology-container {
+    padding: 0 5vw;
+    margin-top: 50px;
+}
+
+.trendingTechnology-container h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1F409A;
+}
+
+.trendingTechnology-container .trendingTechnology-slider {
+    margin-top: 20px;
+    height: 219px;
+}
+
+.trendingTechnology-container .slick-track {
+    display: flex;
+    gap: 20px;
+}
+
+.trendingTechnology-container .trendingTechnology-slide {
+    background-color: #98d7ec;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.trendingTechnology-container .trendingTechnology-slide:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s linear;
+    cursor: pointer;
+    background-color: #37C5F4;
+}
+
+.trendingTechnology-container .slick-dots {
+    bottom: -45px;
+}
+
+.trendingTechnology-container .trendingTechnology-slide svg {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.trendingTechnology-container .trendingTechnology-slide p {
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+}
+
+.trendingTechnology-container .slick-arrow::after,
+.trendingTechnology-container .slick-arrow::before {
+    color: #1F409A;
+}
+
+@media screen and (max-width: 768px) {
+
+    .trendingTechnology-container .slick-arrow::after,
+    .trendingTechnology-container .slick-arrow::before {
+        display: none;
+    }
+
+}

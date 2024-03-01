@@ -1,0 +1,38 @@
+.frequentlyAskedQuestions-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 5vw;
+}
+
+.frequentlyAskedQuestions-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.frequentlyAskedQuestions-container h1 span {
+    color: #1F409A;
+}
+
+.frequentlyAskedQuestions-container .frequentlyAskedQuestions-accordion {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.frequentlyAskedQuestions-container .MuiAccordionSummary-content {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.frequentlyAskedQuestions-container .MuiTypography-root {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .frequentlyAskedQuestions-container .frequentlyAskedQuestions-accordion {
+        width: 100%;
+    }
+
+}
